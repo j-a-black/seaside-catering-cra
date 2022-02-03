@@ -9,17 +9,20 @@ import "./navbar.scss";
 const Navbar = () => {
   const [mobileMenuSlider, setMobileMenuSlider] = useState(false);
 
-  const showMobileMenu = () => setMobileMenuSlider(!mobileMenuSlider);
+  const toggleMobileMenu = () => setMobileMenuSlider(!mobileMenuSlider);
+  const closeMobileMenu = () => setMobileMenuSlider(false);
 
   return (
     <nav className="navbar">
       <div className="navbar__container">
         <CgMenuLeft
           style={{ fontSize: "30px", cursor: "pointer" }}
-          onClick={showMobileMenu}
+          onClick={toggleMobileMenu}
         />
         <Link to="/">
-          <span className="navbar__logo">SEASIDE CATERING</span>
+          <span className="navbar__logo" onClick={closeMobileMenu}>
+            SEASIDE CATERING
+          </span>
         </Link>
       </div>
       <nav
@@ -29,7 +32,7 @@ const Navbar = () => {
             : "navbar__mobile-menu"
         }
       >
-        <MobileMenu showMobileMenu={showMobileMenu} />
+        <MobileMenu toggleMobileMenu={toggleMobileMenu} />
       </nav>
     </nav>
   );

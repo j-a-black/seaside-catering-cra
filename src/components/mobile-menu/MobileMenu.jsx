@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { MobileMenuData } from "./mobileMenuData";
 import "./mobile-menu.scss";
 
-const MobileMenu = ({ showMobileMenu }) => {
+const MobileMenu = ({ toggleMobileMenu }) => {
   return (
     <ul>
       {MobileMenuData.map((item, index) => {
         return (
           <li key={index} className={item.className}>
-            <Link to={item.path} onClick={showMobileMenu}>
+            <Link to={item.path} onClick={toggleMobileMenu}>
               {item.title}
             </Link>
           </li>

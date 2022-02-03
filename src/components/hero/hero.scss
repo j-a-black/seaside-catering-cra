@@ -1,0 +1,30 @@
+.hero-container {
+  border: 1px dotted red;
+  width: 100%;
+  height: calc(75vh - 60px);
+}
+
+.hero__image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/hero.jpg");
+  height: calc(75vh - 60px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  .hero__text-box {
+    width: 100%;
+    max-width: 1024px;
+    font-size: 32px;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
