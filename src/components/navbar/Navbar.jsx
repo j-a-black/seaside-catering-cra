@@ -21,7 +21,7 @@ const Navbar = () => {
         />
         <Link to="/">
           <span className="navbar__logo" onClick={closeMobileMenu}>
-            SEASIDE CATERING
+            OCEANSIDE CATERING
           </span>
         </Link>
       </div>

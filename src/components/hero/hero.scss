@@ -38,7 +38,8 @@
   }
 
   .hero__title {
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: 300;
     letter-spacing: 1px;
     font-family: $font-hero;
   }
@@ -46,7 +47,7 @@
   .hero__sub-title {
     margin-top: 20px;
     font-family: $font-hero-subtitle;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
   }
@@ -55,7 +56,7 @@
     margin-top: 20px;
     padding: 10px 20px;
     letter-spacing: 0.5px;
-    color: black;
+    color: #555;
     cursor: pointer;
     outline: none;
     background: linear-gradient(to right, #efeee8 34%, #872200 65%);
