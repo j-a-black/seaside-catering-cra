@@ -1,5 +1,6 @@
 import React from "react";
 import { HeroData } from "./heroData";
+import { Link } from "react-router-dom";
 
 import "./hero.scss";
 
@@ -8,9 +9,11 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero__image">
         <div className="hero__text-box">
-          <span>{HeroData[0].title}</span>
-          <span>{HeroData[0].subTitle1}</span>
-          <span>{HeroData[0].subTitle2}</span>
+          <span className="hero__title">{HeroData[0].title}</span>
+          <span className="hero__sub-title">{HeroData[0].subTitle1}</span>
+          <Link to={"/menu"} className="hero__menu-link">
+            {HeroData[0].linkText}
+          </Link>
         </div>
       </div>
     </section>

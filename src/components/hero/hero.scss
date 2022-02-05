@@ -1,3 +1,5 @@
+@import "../../main/variables";
+
 .hero-container {
   border: 1px dotted red;
   width: 100%;
@@ -6,32 +8,64 @@
 
 .hero__image {
   background-image: linear-gradient(
-      to right top,
-      #05193783,
-      #004d7a83,
-      #0087937c,
-      #00bf736c,
-      #a6eb123a
+      to bottom,
+      #000000ab,
+      #3b3b3ba6,
+      #777777a8,
+      #b9b9b94f,
+      #ffffff81
     ),
-    url("../../images/hero.jpg");
+    url("../../images/hero2.jpg");
   height: calc(75vh - 60px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: grid;
-  place-items: center;
+  place-items: start center;
 
   .hero__text-box {
+    padding: 0 10px;
     width: 100%;
     max-width: 1024px;
-    font-size: 32px;
-    font-weight: 200;
-    color: white;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 5%;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: $font-hero;
+  }
+
+  .hero__sub-title {
+    margin-top: 20px;
+    font-family: $font-hero-subtitle;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .hero__menu-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(to right, #efeee8 34%, #872200 65%);
+    background-size: 300% 100%;
+    background-position: left bottom;
+    transition: 200ms ease;
+
+    &:hover {
+      background-position: right bottom;
+      color: white;
+    }
   }
 }
