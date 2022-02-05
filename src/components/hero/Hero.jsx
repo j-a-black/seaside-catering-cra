@@ -6,17 +6,17 @@ import "./hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero-container">
+    <div className="hero-container">
       <div className="hero__image">
         <div className="hero__text-box">
           <span className="hero__title">{HeroData[0].title}</span>
           <span className="hero__sub-title">{HeroData[0].subTitle1}</span>
-          <Link to={"/menu"} className="hero__menu-link">
+          <Link to="/menu" className="hero__menu-link">
             {HeroData[0].linkText}
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
