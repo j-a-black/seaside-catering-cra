@@ -1,5 +1,4 @@
 .card {
-  background-color: #cdd7d6;
   margin: 0 auto;
   width: 100%;
   height: auto;
@@ -25,6 +24,14 @@
     place-items: center;
     flex: 2 1;
     padding: 5rem 0.5rem;
+    background: linear-gradient(
+      to right,
+      #dff9fb,
+      #cbe6ec,
+      #b7d4dd,
+      #a5c1cf,
+      #95afc0
+    );
 
     .card__aside {
       width: 100%;
@@ -57,6 +64,28 @@
         text-transform: uppercase;
         font-size: 0.75rem;
         cursor: pointer;
+        position: relative;
+        color: #872200;
+
+        &::after {
+          content: "";
+          width: 0%;
+          height: 2.5px;
+          left: 0;
+          bottom: -10px;
+          position: absolute;
+          background-color: #c4560c;
+          transition: all 0.2s ease-in;
+        }
+
+        &:hover {
+          color: #c4560c;
+          font-weight: 500;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
@@ -76,8 +105,19 @@
   }
 
   .card:nth-of-type(even) {
+    .card {
+      background: green;
+    }
     .card__body {
       order: -1;
+      background: linear-gradient(
+        to right,
+        #95afc0,
+        #a5c1cf,
+        #b7d4dd,
+        #cbe6ec,
+        #dff9fb
+      );
     }
   }
 }
