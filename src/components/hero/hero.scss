@@ -5,7 +5,14 @@
 }
 
 .hero__image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      to right top,
+      #05193783,
+      #004d7a83,
+      #0087937c,
+      #00bf736c,
+      #a6eb123a
+    ),
     url("../../images/hero.jpg");
   height: calc(75vh - 60px);
   background-position: center;
