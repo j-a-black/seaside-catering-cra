@@ -1,7 +1,7 @@
 @import "../../main/variables";
 
 .hero-container {
-  border: 1px dotted red;
+  // border: 1px dotted red;
   width: 100%;
   height: calc(75vh - 60px);
 }
@@ -53,13 +53,17 @@
   }
 
   .hero__menu-link {
+    font-family: $font-hero-subtitle;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
     margin-top: 20px;
     padding: 10px 20px;
-    letter-spacing: 0.5px;
-    color: #555;
+    // color: #555;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(to right, #efeee8 34%, #872200 65%);
+    // background: linear-gradient(to right, #efeee8 34%, #872200 65%);
+    background: linear-gradient(to right, #872200 34%, #c4560c 65%);
     background-size: 300% 100%;
     background-position: left bottom;
     transition: 200ms ease;
