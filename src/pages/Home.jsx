@@ -1,6 +1,7 @@
 import React from "react";
 import CardItems from "../components/card-items/CardItems";
 import CardList from "../components/card-primary/CardList";
+import Footer from "../components/footer/Footer";
 
 import Hero from "../components/hero/Hero";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <section>
         <CardItems />
       </section>
+      <Footer />
     </>
   );
 };
