@@ -4,6 +4,7 @@ import Steak from "../../images/steak.png";
 export const homeCardData = [
   {
     imgSrc: IceCream,
+    imgAlt: "ice cream",
     title: "catering",
     paraBold:
       "Enjoy food freshly prepared at the location of your choice with a personalized menu designed for your needs",
@@ -14,6 +15,7 @@ export const homeCardData = [
   },
   {
     imgSrc: Steak,
+    imgAlt: "steak",
     title: "about",
     paraBold:
       "Seaside Catering provides private catering services within California",

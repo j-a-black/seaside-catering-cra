@@ -1,0 +1,20 @@
+@import "../../main/variables";
+
+.link {
+  font-family: $font-hero-subtitle;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(to right, #872200 34%, #c4560c 65%);
+  background-size: 300% 100%;
+  background-position: left bottom;
+  transition: 200ms ease;
+
+  &:hover {
+    background-position: right bottom;
+    color: white;
+  }
+}

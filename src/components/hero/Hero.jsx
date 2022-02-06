@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroData } from "./heroData";
 import { Link } from "react-router-dom";
+import LinkButton from "../link-button/LinkButton";
 
 import "./hero.scss";
 
@@ -9,11 +10,9 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero__image">
         <div className="hero__text-box">
-          <span className="hero__title">{HeroData[0].title}</span>
+          <h1 className="hero__title">{HeroData[0].title}</h1>
           <span className="hero__sub-title">{HeroData[0].subTitle1}</span>
-          <Link to="/menu" className="hero__menu-link">
-            {HeroData[0].linkText}
-          </Link>
+          <LinkButton linkPath="/menu" linkText={HeroData[0].linkText} />
         </div>
       </div>
     </div>
