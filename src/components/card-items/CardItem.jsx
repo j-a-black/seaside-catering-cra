@@ -6,7 +6,7 @@ import "./card-item.scss";
 
 const CardItem = ({ cardItem }) => {
   return (
-    <div className="trio__box">
+    <div className="card-item">
       <img src={cardItem.imgSrc} alt={cardItem.imgAlt} />
       <div className="text-centered">
         <LinkButton linkPath={cardItem.linkPath} linkText={cardItem.linkText} />
