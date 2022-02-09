@@ -4,34 +4,41 @@ import "./form.scss";
 
 const Form = () => {
   return (
-    <div className="form-container">
-      <form className="form">
-        <div className="form__group">
+    <div class="form-container">
+      <div class="signup-image"></div>
+      <form class="form">
+        <h1 class="form__title">Welcome to the Unit</h1>
+        <p class="form__description">
+          Lead and manage Covert Action programs and collect foreign
+          intelligence vital to national security
+        </p>
+
+        <div class="form__group">
           <input
             type="text"
             id="email"
-            className="form__input"
+            class="form__input"
             placeholder=" "
-            autoComplete="off"
+            autocomplete="off"
           />
-          <label htmlFor="email" className="form__label">
+          <label for="email" class="form__label">
             Email
           </label>
         </div>
 
-        <div className="form__group">
+        <div class="form__group">
           <input
             type="text"
             id="password"
-            className="form__input"
+            class="form__input"
             placeholder=" "
           />
-          <label htmlFor="password" className="form__label">
+          <label for="password" class="form__label">
             Password
           </label>
         </div>
 
-        <button className="form__button" type="submit">
+        <button class="form__button" type="submit">
           Sign Up
         </button>
       </form>
