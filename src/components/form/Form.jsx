@@ -6,11 +6,6 @@ const Form = () => {
   return (
     <div class="form-container">
       <form class="form">
-        <p class="form__description">
-          Lead and manage Covert Action programs and collect foreign
-          intelligence vital to national security
-        </p>
-
         <div class="form__group">
           <input
             type="text"
