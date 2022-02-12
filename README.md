@@ -2,7 +2,7 @@
 
 Second iteration of Brochure project; in progress...
 
-![Landing Page](/src/images/landingpage.png?raw=true)
+![Landing Page](/src/images/landing-page.png?raw=true)
 
 ## Getting Started with Create React App
 
