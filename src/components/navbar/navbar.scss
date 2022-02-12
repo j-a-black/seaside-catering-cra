@@ -43,3 +43,27 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    &__logo {
+      font-size: 18px;
+    }
+
+    &__menu-button {
+      display: none;
+    }
+
+    &__mobile-menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    &__logo {
+      font-size: 24px;
+    }
+  }
+}

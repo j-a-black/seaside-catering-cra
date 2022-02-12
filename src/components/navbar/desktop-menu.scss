@@ -1,0 +1,44 @@
+.desktop-menu {
+  //   border: 2px dotted red;
+  width: 60%;
+  height: 100%;
+  display: none;
+
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      letter-spacing: 1px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2.5px;
+        left: 0;
+        bottom: -10px;
+        position: absolute;
+        background-color: #2ec4b6;
+        transition: all 0.2s ease-in;
+      }
+
+      &:hover {
+        color: #2ec4b6;
+        font-weight: 500;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { CgMenuLeft } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
 import "./navbar.scss";
+import DesktopMenu from "./DesktopMenu";
 
 const Navbar = () => {
   const [mobileMenuSlider, setMobileMenuSlider] = useState(false);
@@ -20,13 +21,17 @@ const Navbar = () => {
           <MdOutlineClose
             style={{ fontSize: "30px", cursor: "pointer" }}
             onClick={toggleMobileMenu}
+            className="navbar__menu-button"
           />
         ) : (
           <CgMenuLeft
             style={{ fontSize: "30px", cursor: "pointer" }}
             onClick={toggleMobileMenu}
+            className="navbar__menu-button"
           />
         )}
+
+        <DesktopMenu />
 
         <Link to="/">
           <span className="navbar__logo" onClick={closeMobileMenu}>
