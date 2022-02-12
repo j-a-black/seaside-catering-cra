@@ -1,127 +1,99 @@
+@import "../../main/variables";
+
 .form-container {
   width: 100%;
-  max-width: 48rem;
+  max-width: 600px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   overflow: hidden;
+  color: $font-color-primary;
+  // border: 2px dotted red;
+}
 
-  .form {
-    width: 100%;
-    max-width: 24rem;
-    padding: 1rem;
-    background-color: white;
-    border: 2px solid #eee;
+.form {
+  width: inherit;
+  max-width: inherit;
+  padding: 16px;
+  background-color: white;
+  border: 2px solid #eee;
+  position: relative;
+
+  &__group {
     position: relative;
+    height: 40px;
+    margin-bottom: 16px;
+  }
 
-    &__title {
-      color: #5e5e00;
-      margin-bottom: 2rem;
-      position: relative;
-      font-size: 1.4rem;
-      text-align: center;
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: inherit;
+    color: inherit;
+    font-weight: inherit;
+    outline: none;
+    padding: 20px;
+    background: none;
 
-      &::after {
-        content: "";
-        width: 40%;
-        height: 0.3rem;
-        background-color: #5e5e00;
-        position: absolute;
-        bottom: -1rem;
-        left: 50%;
-        transform: translate(-50%, 0) skew(-45deg);
-        align-content: center;
-      }
+    &:hover {
+      border-color: royalblue;
     }
 
-    &__description {
-      margin-bottom: 2rem;
+    &:focus {
+      border-color: orange;
     }
+  }
 
-    &__group {
-      position: relative;
-      height: 3rem;
-      margin-bottom: 1.5rem;
+  &__label {
+    position: absolute;
+    top: -8px;
+    left: 13px;
+    font-size: 13px;
+    padding: 0 8px;
+    background-color: white;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+    padding: 10px 32px;
+    background-color: #5e5e00;
+    font-family: inherit;
+    font-weight: inherit;
+    color: white;
+    outline: none;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: background-color 100ms ease-in;
+
+    &:hover {
+      background-color: #576574;
     }
+  }
+}
 
-    &__input {
-      width: 100%;
-      height: 100%;
-      border: 1px solid gray;
-      border-radius: 0.5rem;
-      font-family: inherit;
-      color: inherit;
-      font-weight: inherit;
-      outline: none;
-      padding: 1.25rem;
-      background: none;
-
-      &:hover {
-        border-color: royalblue;
-      }
-
-      &:focus {
-        border-color: orange;
-      }
-    }
-
+@media screen and (min-width: 700px) {
+  .form {
     &__label {
       position: absolute;
-      left: 1rem;
-      top: 0.9rem;
-      padding: 0 0.5rem;
+      left: 16px;
+      top: 14.4px;
+      padding: 0 8px;
       background-color: white;
       transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    }
-
-    &__button {
-      display: block;
-      margin-left: auto;
-      padding: 0.75rem 2rem;
-      background-color: #5e5e00;
-      font-family: inherit;
-      font-weight: inherit;
-      color: white;
-      outline: none;
-      border: 1px solid gray;
-      cursor: pointer;
-      transition: background-color 100ms ease-in;
-
-      &:hover {
-        background-color: #576574;
-      }
     }
   }
 
   .form__input:focus ~ .form__label,
   .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
     top: -0.5rem;
-    left: 0.8rem;
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 384px) {
-  .form-container {
-    .form__title {
-      font-size: 2rem;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form-container {
-    flex-direction: row;
-
-    .signup-image {
-      height: 32rem;
-    }
-
-    .form {
-      height: 32rem;
-    }
+    left: 13px;
+    font-size: 13px;
   }
 }

@@ -4,22 +4,22 @@ import "./form.scss";
 
 const Form = () => {
   return (
-    <div class="form-container">
-      <form class="form">
-        <div class="form__group">
+    <div className="form-container">
+      <form className="form">
+        <div className="form__group">
           <input
             type="text"
             id="email"
-            class="form__input"
+            className="form__input"
             placeholder=" "
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label for="email" class="form__label">
+          <label htmlFor="email" className="form__label">
             Email
           </label>
         </div>
 
-        <button class="form__button" type="submit">
+        <button className="form__button" type="submit">
           Sign Up
         </button>
       </form>
