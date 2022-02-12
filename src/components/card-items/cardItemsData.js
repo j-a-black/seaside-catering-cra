@@ -6,19 +6,19 @@ export const cardItemsData = [
   {
     imgSrc: Salad,
     imgAlt: "salad",
-    linkPath: "./menu",
+    linkPath: "/menu",
     linkText: "sample menu",
   },
   {
     imgSrc: Crackers,
     imgAlt: "crackers",
-    linkPath: "./catering",
+    linkPath: "/catering",
     linkText: "catering services",
   },
   {
     imgSrc: Burger,
     imgAlt: "burger",
-    linkPath: "./contact",
+    linkPath: "/contact",
     linkText: "contact us",
   },
 ];
