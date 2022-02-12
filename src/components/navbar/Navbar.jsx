@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
 import { CgMenuLeft } from "react-icons/cg";
+import { MdOutlineClose } from "react-icons/md";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -15,10 +16,18 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <CgMenuLeft
-          style={{ fontSize: "30px", cursor: "pointer" }}
-          onClick={toggleMobileMenu}
-        />
+        {mobileMenuSlider ? (
+          <MdOutlineClose
+            style={{ fontSize: "30px", cursor: "pointer" }}
+            onClick={toggleMobileMenu}
+          />
+        ) : (
+          <CgMenuLeft
+            style={{ fontSize: "30px", cursor: "pointer" }}
+            onClick={toggleMobileMenu}
+          />
+        )}
+
         <Link to="/">
           <span className="navbar__logo" onClick={closeMobileMenu}>
             OCEANSIDE CATERING
